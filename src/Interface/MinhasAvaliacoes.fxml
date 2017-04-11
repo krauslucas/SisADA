@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="fundo" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Interface.MinhasAvaliacoesController">
+   <children>
+      <Label fx:id="pagina" layoutX="25.0" layoutY="15.0" scaleX="1.25" scaleY="1.25" text="Minhas Avaliações" />
+      <Button fx:id="addNovaAvaliacao" layoutX="593.0" layoutY="60.0" mnemonicParsing="false" onAction="#addNovaAvaliacao" prefWidth="160.0" scaleX="1.25" scaleY="1.25" text="Adicionar nova avaliação" />
+      <Button fx:id="voltar" layoutX="40.0" layoutY="540.0" mnemonicParsing="false" onAction="#voltarDashboard" prefWidth="60.0" scaleX="1.25" scaleY="1.25" text="Voltar" />
+      <TableView fx:id="minhasAvaliacoes" layoutX="33.0" layoutY="110.0" prefHeight="400.0" prefWidth="740.0">
+        <columns>
+          <TableColumn prefWidth="260.0" text="Nome" />
+          <TableColumn prefWidth="260.0" text="Disciplina" />
+          <TableColumn prefWidth="70.0" text="Média" />
+          <TableColumn prefWidth="70.0" text="Peso" />
+          <TableColumn text="Minha nota" />
+        </columns>
+      </TableView>
+      <Button fx:id="informarNota" layoutX="363.0" layoutY="60.0" mnemonicParsing="false" onAction="#informarNota" prefWidth="120.0" scaleX="1.25" scaleY="1.25" text="Informar nota" />
+   </children>
+</AnchorPane>

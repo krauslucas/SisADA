@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="fundo" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Interface.InformarNotaController">
+   <children>
+      <Label fx:id="pagina" layoutX="22.0" layoutY="15.0" scaleX="1.25" scaleY="1.25" text="Informar Nota" />
+      <Label fx:id="nome" layoutX="94.0" layoutY="100.0" scaleX="1.5" scaleY="1.5" text="Nome: Prova Java" />
+      <Label fx:id="disciplina" layoutX="130.0" layoutY="140.0" scaleX="1.5" scaleY="1.5" text="Disciplina: Programação Orientada a Objetos" />
+      <Label fx:id="media" layoutX="85.0" layoutY="180.0" scaleX="1.5" scaleY="1.5" text="Média: M1" />
+      <Label fx:id="minhaNOta" layoutX="87.0" layoutY="260.0" scaleX="1.5" scaleY="1.5" text="Minha nota:" />
+      <TextField fx:id="tfNota" layoutX="70.0" layoutY="290.0" />
+      <Button fx:id="voltar" layoutX="40.0" layoutY="540.0" mnemonicParsing="false" onAction="#voltarMinhasAvaliacoes" prefWidth="60.0" scaleX="1.25" scaleY="1.25" text="Voltar" />
+      <Button fx:id="salvar" layoutX="690.0" layoutY="540.0" mnemonicParsing="false" onAction="#salvarNota" prefWidth="60.0" scaleX="1.25" scaleY="1.25" text="Salvar" />
+   </children>
+</AnchorPane>
